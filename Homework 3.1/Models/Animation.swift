@@ -6,3 +6,24 @@
 //
 
 import Foundation
+
+struct Animation {
+    var preset: String
+    var curve: String
+    
+    var force: Double
+    var duration: Double
+    var delay: Double
+    
+    static func getAnimation() -> Animation {
+        Animation(
+            preset: DataStore.shared.preset.randomElement() ?? "",
+            curve: DataStore.shared.curve.randomElement() ?? "",
+            force: Double.random(in: 1.0 ..< 2.0),
+            duration: Double.random(in: 1.0 ..< 2.0),
+            delay: 1.0
+        )
+    }
+}
+
+
