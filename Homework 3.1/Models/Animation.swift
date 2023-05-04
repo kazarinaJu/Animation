@@ -8,12 +8,12 @@
 import Foundation
 
 struct Animation {
-    var preset: String
-    var curve: String
+    let preset: String
+    let curve: String
     
-    var force: Double
-    var duration: Double
-    var delay: Double
+    let force: Double
+    let duration: Double
+    let delay: Double
     
     static func getAnimation() -> Animation {
         Animation(

@@ -10,8 +10,6 @@ import SpringAnimation
 
 final class MainViewController: UIViewController {
     
-    private var randomAnimation = Animation.getAnimation()
-    
     @IBOutlet var animatedView: SpringView!
     
     @IBOutlet var presetLabel: UILabel!
@@ -21,6 +19,8 @@ final class MainViewController: UIViewController {
     @IBOutlet var delayLabel: UILabel!
     
     @IBOutlet var runButton: SpringButton!
+    
+    private var randomAnimation = Animation.getAnimation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
